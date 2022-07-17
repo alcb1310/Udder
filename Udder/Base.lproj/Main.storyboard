@@ -22,28 +22,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fresh Milk on Demand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krN-Ca-Hd5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fresh Milk on Demand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krN-Ca-Hd5">
                                 <rect key="frame" x="122" y="313" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="milk-splash" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3H-G9-bQC">
+                                <rect key="frame" x="0.0" y="538" width="414" height="358"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="fEc-el-S5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1AY-HZ-khq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s3H-G9-bQC" secondAttribute="trailing" id="3TO-ed-Tzm"/>
+                            <constraint firstAttribute="bottom" secondItem="s3H-G9-bQC" secondAttribute="bottom" id="5Nl-3g-dv7"/>
+                            <constraint firstItem="krN-Ca-Hd5" firstAttribute="top" secondItem="fEc-el-S5o" secondAttribute="bottom" constant="80" id="CO8-x7-U1m"/>
                             <constraint firstItem="fEc-el-S5o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="JsW-Hd-uRv"/>
+                            <constraint firstItem="krN-Ca-Hd5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nc0-cK-h2f"/>
+                            <constraint firstItem="s3H-G9-bQC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wxX-RN-f5L"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="66"/>
+            <point key="canvasLocation" x="44.927536231884062" y="65.625"/>
         </scene>
     </scenes>
     <resources>
+        <image name="milk-splash" width="180" height="180"/>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
